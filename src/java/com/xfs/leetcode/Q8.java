@@ -1,5 +1,7 @@
 package com.xfs.leetcode;
 
+import java.util.Objects;
+
 /**
  * @author fansong Created on 2018/11/20 0020
  */
@@ -44,7 +46,7 @@ public class Q8 {
 	}
 
 	public static int myAtoi(String str) {
-		if ("".equals(str)) {
+		if (Objects.equals(str, "")) {
 			return 0;
 		}
 		int index = 0;
